@@ -1,4 +1,9 @@
--- Creating the UI Library
+-- Roblox UI Library
+
+-- Add UserInputService at the top
+local UserInputService = game:GetService("UserInputService")
+
+-- Create the UI Library
 local UILibrary = {}
 
 -- Function to create the main window (Draggable UI Frame)
@@ -39,7 +44,7 @@ function UILibrary:CreateWindow(title, size, position)
     titleLabel.TextWrapped = true
     titleLabel.Parent = titleBar
 
-    -- Draggable Window
+    -- Draggable Window Logic
     local dragging = false
     local dragInput, mousePos, framePos
 
